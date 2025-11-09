@@ -1,0 +1,18 @@
+:root{--accent:#ff9aa2;--accent2:#fad0c4;--text:#6b476b}
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial}
+body{margin:0;color:var(--text);background:linear-gradient(180deg,#fff #fffaf7);}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:24px 32px}
+.logo svg{height:64px}
+.nav{position:relative}
+#menuBtn{background:none;border:2px solid var(--text);padding:8px 12px;border-radius:8px}
+#menu{list-style:none;padding:8px;margin:8px 0;display:flex;gap:12px}
+#menu.hidden{display:none}
+.tag{font-size:28px;margin:16px 32px}
+.cards{display:flex;gap:20px;padding:20px}
+.card{background:white;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.06);width:320px}
+.img{width:100%;height:180px}
+.btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:white;cursor:pointer}
+.about{padding:20px 32px}
+footer{padding:20px;text-align:center;color:#8a5a8a}
+form{display:flex;flex-direction:column;gap:8px;max-width:420px}
+input,textarea{padding:10px;border-radius:8px;border:1px solid #e5d6e0}
