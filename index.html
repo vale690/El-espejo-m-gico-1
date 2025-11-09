@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Al Espejo Mágico - Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">
+      <!-- Logo SVG: espejo + tipografía elegante -->
+      <svg width="120" height="60" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Al Espejo Mágico">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0" stop-color="#ff9a9e" />
+            <stop offset="1" stop-color="#fad0c4" />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="300" height="120" rx="20" fill="transparent" />
+        <g transform="translate(20,20)">
+          <ellipse cx="40" cy="30" rx="30" ry="38" fill="url(#g1)" stroke="#8a5a8a" stroke-width="3" />
+          <rect x="70" y="8" width="200" height="44" rx="8" fill="none" />
+          <text x="90" y="40" font-family="Georgia, serif" font-size="28" fill="#8a5a8a">Al Espejo Mágico</text>
+        </g>
+      </svg>
+    </div>
+    <nav class="nav">
+      <button id="menuBtn">Menú ☰</button>
+      <ul id="menu" class="hidden">
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1 class="tag">Moda única, estilo mágico</h1>
+  </header>
+
+  <main>
+    <section id="coleccion" class="cards">
+      <article class="card">
+        <!-- Imagen 1: ilustración inline -->
+        <figure>
+          <svg class="img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vestido">
+            <rect width="200" height="200" rx="16" fill="#fff4f8" />
+            <g transform="translate(30,20)">
+              <path d="M20 10 C50 0, 80 0, 110 10 L90 80 L40 80 Z" fill="#ff9aa2" stroke="#c86b84"/>
+            </g>
+          </svg>
+          <figcaption>Vestido de colección</figcaption>
+        </figure>
+        <h3>Vestido Aurora</h3>
+        <p>Diseño exclusivo para ocasiones especiales.</p>
+        <button class="btn" onclick="addFav('Vestido Aurora')">Guardar favorito</button>
+      </article>
+
+      <article class="card">
+        <figure>
+          <!-- Imagen 2: ilustración inline accesorios -->
+          <svg class="img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bolso">
+            <rect width="200" height="200" rx="16" fill="#fffaf0" />
+            <g transform="translate(30,40)">
+              <rect x="10" y="10" width="120" height="80" rx="12" fill="#ffd6a5" stroke="#d4946a" />
+              <circle cx="70" cy="30" r="8" fill="#8a5a8a" />
+            </g>
+          </svg>
+          <figcaption>Bolso artesanal</figcaption>
+        </figure>
+        <h3>Bolso Lunar</h3>
+        <p>Hecho a mano con materiales sostenibles.</p>
+        <button class="btn" onclick="addFav('Bolso Lunar')">Guardar favorito</button>
+      </article>
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Sobre la boutique</h2>
+      <p>Al Espejo Mágico es una boutique curada para quienes buscan prendas con personalidad. Diseño elegante, toques mágicos y atención personalizada.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Tu nombre" required>
+        <input type="email" id="email" placeholder="Tu correo" required>
+        <textarea id="message" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Al Espejo Mágico</footer>
+  <script src="script.js"></script>
+</body>
+</html>
